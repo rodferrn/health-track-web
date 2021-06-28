@@ -1,0 +1,187 @@
+body { 
+    background-color: rgb(77, 11, 139);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header img { 
+    width: 300px;
+    height: 150x;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-small img { 
+    width: 120px ;
+    height: 55px;
+    margin-left: 1cm;
+    margin-right: auto;
+}
+.header-small h3 {
+    text-align: center;
+}
+
+.container-principal {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    padding: 50px;
+    width: 61%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-index {
+    background-color: rgba(243, 235, 240, 0.829);
+    border-radius: 15px;
+    padding: 50px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-header h4 { 
+    text-align: center;
+}
+.container-header img { 
+    margin-right: 55px;
+    margin-left: 55px;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    width:61%;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+.nav-item a {
+    color: black;
+}
+.nav-item {
+    font-size: 18px;
+}
+.icone__cor {
+    color: rgb(247, 143, 25);
+}
+
+.btn-logar {
+    background-color: rgb(255, 140, 98); /* orange-red */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;    
+}
+.btn-criaconta { 
+    background-color: rgb(255, 140, 98); /* orange-red */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: inherit;
+    right: 20cm
+}
+.btn-enviar { 
+    background-color: rgb(255, 140, 98); /* orange-red */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: inherit;
+    left: 10cm;
+}
+
+.form-control {
+    width: 250px;
+    height: 40px;
+    margin-top: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 700px)
+{ 
+    body {
+        background-image: url(images/health_320x480.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .form-control {
+        width: 150px;
+        height: 40px;
+        margin-top: 0;
+    }
+    .header img { 
+        width: 100px;
+        height: 50x;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 
+@media screen and (min-width: 640px) and (max-width: 1024px)
+{ 
+    body {
+        background-image: url(images/health_640x1136.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .header img { 
+        width: 150px;
+        height: 100x;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+{ 
+body { 
+    background-image: url(images/health_1024x768.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+@media screen and (min-width: 1280px) and (max-width: 1366px)
+{ 
+body { 
+    background-image: url(images/health_1280x1024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+@media screen and (min-width: 1366px) and (max-width: 1440px)
+{ 
+body { 
+    background-image: url(images/health_1366x768.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+@media screen and (min-width: 1440px) and (max-width: 1600px)
+{ 
+body { 
+    background-image: url(images/health_1440x900.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+@media screen and (min-width: 1600px) and (max-width: 1920px)
+{ 
+body { 
+    background-image: url(images/health_1600x900.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+@media screen and (min-width: 1920px)
+{ 
+body { 
+    background-image: url(images/health_1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
