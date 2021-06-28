@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./css/style.css">
+
+        <title>Health Track - Medidas Antropometricas</title>
+        <br>
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light md-flex justify-content-center">
+            <div class="header-small">
+                <img src="./css/images/logo_transparent_background.png" alt="logo" />
+            </div>        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mb-2 w-100 mb-lg-0 md-flex justify-content-around">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categorias
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="./cadastro_atividade.html">Registrar Atividade Física</a>
+                    <a class="dropdown-item" href="./cadastro_medidas.html">Medidas Antropométricas</a><br>
+                    <p class="dropdown-item">Sono(Em breve)</p>
+                    <p class="dropdown-item">Meditação(Em breve)</p>
+                    <p class="dropdown-item">Contador de Calorias(Em breve)</p>
+                    <p class="dropdown-item">Lembrete de Água(Em breve)</p>
+                    <p class="dropdown-item">Nutrição(Em breve)</p>
+                    <p class="dropdown-item">Monitoração Cardíaca(Em breve)</p>
+                    <p class="dropdown-item">Registro de Sintomas(Em breve)</p>
+                    <p class="dropdown-item">Ciclo Menstrual(Em breve)</p>
+                    <p class="dropdown-item">Minha Saúde(Em breve)</p>
+                    <p class="dropdown-item">Serviços de Saúde(Em breve)</p>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mensagens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Suporte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Sair</a>
+                </li>
+                <div class="col-12 col-sm-12 col-md-2 text-center">
+                    <h5>Perfil do Usuário</h5>
+                    <i class="bi bi-person-circle icone__cor"></i>
+                </div>     
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-principal">
+            <div class="header-small">
+                <h3>Cadastrar medidas antropométricas</h3><br>
+                <p><h4>Vamos la, este é seu espaço para cadastrar seu peso e medidas.</p><br>
+                    <p>É muito importante que você complete o seu perfil para nos informar sua altura,pois o cálculo do IMC será baseado nos valores 
+                        que você nos informou sobre sua altura previamente preenchida em seu cadastro.</p>
+                </h4>
+            </div>   
+
+            <div>
+                <label class="control-label col-sm-0" for="vl_peso"></label><br>
+                <label for="vl_peso">Informe o seu peso (Exemplo: 64.500):</label><br>
+                <input type="number" min="0" class="form-control" id="vl_peso" placeholder="0">
+                <br>
+            </div>
+
+            <div>
+                <label class="control-label col-sm-0" for="vl_cr_cintura"></label><br>
+                <label for="vl_cr_cintura">Circunferência da cintura em centímetros:</label><br>
+                <input type="number" min="0" class="form-control" id="vl_cr_cintura" placeholder="0">
+                <br>
+            </div>
+
+            <div>
+                <label class="control-label col-sm-0" for="vl_cr_quadril"></label><br>
+                <label for="vl_cr_quadril">Circunferência do quadril em centímetros:</label><br>
+                <input type="number" min="0" class="form-control" id="vl_cr_quadril" placeholder="0">
+                <br>
+            </div>
+
+            <div>
+                <label class="control-label col-sm-0" for="vl_cr_abdominal"></label><br>
+                <label for="vl_cr_abdominal">Circunferência abdominal em centímetros:</label><br>
+                <input type="number" min="0" class="form-control" id="vl_cr_abdominal" placeholder="0">
+                <br>
+            </div>
+            
+            <div style="overflow-x:auto;">
+            <table width="600" border="3">
+                <thead>
+                    <tr>
+                    <!-- Primeira linha -->
+                    <h5>Histórico de Medidas.
+                    <p>Seu IMC será calculado automaticamente com base em sua altura e peso.</h5><br>
+                    <th width="30%">Data da atualização</th>
+                    <th>Peso</th>
+                    <th>Quadril</th>
+                    <th>Cintura</th>
+                    <th>Abdômen</th>
+                    <th>Cálculo do IMC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <!-- Segunda linha -->
+                    <td>21/06/2021</td>
+                    <td>64.500</td>
+                    <td>70</td>
+                    <td>80</td>
+                    <td>105</td>
+                    <td>26.00</td>
+                    </tr>
+                    <tr>
+                    <!-- Terceira linha -->
+                    <td>23/05/2021</td>
+                    <td>67.350</td>
+                    <td>73</td>
+                    <td>84</td>
+                    <td>109</td>
+                    <td>25.70</td>
+                    <tr>
+                    <!-- Terceira linha -->
+                    <td>18/12/2019</td>
+                    <td>84.100</td>
+                    <td>88</td>
+                    <td>97</td>
+                    <td>150</td>
+                    <td>34.30</td>
+                    </tr>
+                </tbody>
+            </table><br><br><br>
+            </div>
+
+            <form>
+            <button type="submit" class="btn-enviar btn" formaction="./index.html">Atualizar Peso</button>
+            </form>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

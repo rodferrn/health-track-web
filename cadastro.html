@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="./css/style.css">
+
+        <title>Health Track - Cadastro</title>
+        <br>
+    </head>
+    <body>
+        <div class="container-principal">            
+            <div class="header-small">
+                <img src="./css/images/logo_transparent_background.png" alt="logo" />
+                <h1>Cadastro de usuário</h1><br>
+            </div>
+
+            <form>
+
+                <div>
+                    <label class="control-label col-sm-0" for="email"></label>
+                    <label for="email">Insira seu email:</label>
+                    <input type="email" class="form-control" id="email"><br>
+                </div>
+                <div>
+                    <label class="control-label col-sm-0" for="nome"></label>
+                    <label for="name">Insira seu nome completo:</label>
+                    <input type="name" class="form-control" id="nome"><br>
+                </div>
+                <div>
+                    <label class="control-label col-sm-0" for="dt-nascimento"></label>
+                    <label for="birth-date">Insira sua data de nascimento:</label>
+                    <input type="date" class="form-control" id="dt-nascimento"><br>
+                </div>
+                <div>
+                    <label class="control-label col-sm-0" for="email"></label>
+                    <label for="cpf">Insira seu CPF (somente números):</label>
+                    <input type="number" class="form-control" id="cpf"><br>
+                </div>
+
+                <div>
+                    <label class="control-label col-sm-0" for="password"></label>
+                    <label for="senha">Insira uma senha com no mínimo 8 caracteres sendo 1 caracter especial e 1 caracter maiúsculo:</label>
+                    <input type="password" class="form-control" id="password"><br>
+                </div>
+
+                <div>
+                    <label class="control-label col-sm-0" for="password"></label>
+                    <label for="senha">Digite a senha novamente:</label>
+                    <input type="password" class="form-control" id="password"><br>
+                </div>
+                
+                <p>A informação abaixo está sendo solicitada somente para calculo de ciclo menstrual.</p>
+                <label for="estcivil">Escolha o sexo:   
+                <input type="radio" name="sexo" value="Masculino">Masculino
+                <input type="radio" name="sexo" value="Feminino">Feminino<br><br>
+
+                <button type="submit" class="btn-enviar btn" formaction="./login.html">Criar conta</button>
+
+            </form>
+            </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>        
+    </body>
+</html>
